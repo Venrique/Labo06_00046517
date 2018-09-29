@@ -12,5 +12,5 @@ function fisica(array){
         incerteza = incerteza+(i-prom)**2;
     }
 
-    console.log('X = '+prom+' ± '+Math.sqrt(incerteza/(array.length-1)));
+    console.log('X = '+Math.round(prom*10)/10+' ± '+Math.round(Math.sqrt(incerteza/(array.length-1))*10)/10);
 }
